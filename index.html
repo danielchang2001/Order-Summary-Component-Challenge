@@ -3,35 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Order summary card</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    .card {
+      width: 30rem;
+      align-items: center;    
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+
+    }
+    .row {
+      margin-top: 20px;
+      margin-left: 0px;
+      margin-right: -18px;
+    }
+    .btn {
+      background-color: hsl(245, 75%, 52%);
+      width: 80%;
+    }
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <img style="width: 100%; top: -90px; position: absolute;" src="images/pattern-background-desktop.svg" alt="">
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="" class="card-img-top">
+    <div class="card-body">
+      <h2 class="card-title" style="color:hsl(223, 47%, 23%);"><strong>Order Summary</strong></h2>
+      <p style="color: hsl(224, 23%, 55%);" class="card-text">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"style="text-align: left; margin-right: 8px;"><img src="images/icon-music.svg" alt=""></div>
+        <div class="col-sm-5" style ="text-align: left;">
+          <p style="color: hsl(224, 23%, 55%);"><span style="color: hsl(223, 47%, 23%)"><strong>Annual Plan</strong></span><br>$59.99/year</p>
+        </div>
+        <a class="col-sm-4" style="text-align: right; margin-top: 10px; color:hsl(245, 75%, 52%);" href="">Change</a>
+      </div>
+    </div>
+    <button type="button" class="btn">
+      <h6 style="color: white;"><strong>Proceed to Payment</strong></h6>
+    </button>
+    <h6 style="color: hsl(224, 23%, 55%);"><strong>Cancel Order</strong></h6>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
