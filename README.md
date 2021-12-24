@@ -1,3 +1,7 @@
+# My Solution
+
+https://www.frontendmentor.io/solutions/order-summary-component-using-html-and-css-s29Fs4GNq
+
 # Frontend Mentor - Order summary card
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
