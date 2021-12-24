@@ -46,7 +46,23 @@
       border-radius: 10px;
       box-shadow: 0 6px 8px 0 hsl(223, 47%, 85%), 0 8px 20px 0 hsl(223, 47%, 85%);
     }
-
+    .btn:hover {
+      background-color: hsl(245, 75%, 70%);
+      box-shadow: 0 6px 8px 0 hsl(223, 47%, 85%), 0 8px 20px 0 hsl(223, 47%, 85%);
+    }
+    .cancel {
+      color: hsl(224, 23%, 55%); margin-bottom: 50px;
+    }
+    .cancel:hover{
+      cursor:grab;
+      color: hsl(223, 47%, 23%);
+    }
+    a {
+      color:hsl(245, 75%, 52%);
+    }
+    a:hover {
+      color: hsl(245, 75%, 70%);
+    }
     .card-title {
       margin-top: 30px;
       margin-bottom: 22px;
@@ -72,18 +88,18 @@
         <div class="col-sm-5" style ="text-align: left;">
           <p style="color: hsl(224, 23%, 55%);"><span style="color: hsl(223, 47%, 23%)"><strong>Annual Plan</strong></span><br>$59.99/year</p>
         </div>
-        <a class="col-sm-4" style="text-align: right; margin-top: 8px; color:hsl(245, 75%, 52%);" href="">Change</a>
+        <a class="col-sm-4" style="text-align: right; margin-top: 8px;" href="">Change</a>
       </div>
     </div>
     <button type="button" class="btn">
       <h6 style="color: white; margin-top: 8px;"><strong>Proceed to Payment</strong></h6>
     </button>
-    <h6 style="color: hsl(224, 23%, 55%); margin-bottom: 50px;"><strong>Cancel Order</strong></h6>
+    <h6 class="cancel"><strong>Cancel Order</strong></h6>
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Daniel</a>.
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
